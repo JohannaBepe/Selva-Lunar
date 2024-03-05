@@ -1,0 +1,253 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --seagreen: #2e8b57;
+    --title: #529770;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --sb: 30px;
+    --hg: 50px;
+}
+body {
+    margin: 0;
+    font-family: 'quicksand', sans-serif;
+}
+.navar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.menu {
+    display: none;
+}
+ .logo{
+    height: 50px;
+    width: 40px;
+ }
+
+ .navar-left ul,
+ .navar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+ }
+ .navar-left {
+    display: flex;
+ }
+ .navar-left ul{
+    margin-left: 12px;
+ }
+
+ .navar-left ul li a,
+ .navar-right ul li a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+ }
+
+ .navar-left ul li a:hover,
+ .navar-right ul li a:hover {
+border: 1px solid var(--hospital-green);
+color: var(--hospital-green);
+ }
+ .navar-shopping-car div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+ }
+ .pag-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+ }
+ @media (max-width:640px) {
+    .menu {
+        display: block;
+    }
+    .navbar-left ul {
+       display: none;
+    }
+    .navbar-email {
+        display: none;
+    }
+ }
+ .header {
+    background-color: var(--hospital-green);
+    width: 100%;
+    height: 60%;
+ }
+ #encabezado {
+    width: 80%;
+    height: 30%;
+    margin: auto;
+ }
+ #logo{
+    font-size: 20px;
+    padding: 10px;
+    color: var(--text-input-field);
+ }
+
+ /*-- contenido principal ----*/
+
+ #principal{
+    width: 80%;
+    height: auto; overflow: hidden;
+    border: 1px solid var(--hospital-green);
+    margin: 10px auto;
+ }
+ #publicaciones {
+    width: 70%;
+    height: auto; overflow: hidden;
+    border: 1px solid var(--white);
+    margin-top: 10px;
+    float: left;
+ }
+ .post {
+    width: 99%;
+    height: auto;overflow: hidden;
+    padding: 7px;
+    border-left-style:solid ;
+    border-left-width: 5px;
+    border-left-color: var(--hospital-green);
+    border-top-style:solid ;
+    border-top-width: 1px; margin-bottom: 15px;
+    border-top-color: var(--very-light-pink);
+
+ }
+ .enlace-post{
+    text-decoration: none;
+    cursor: pointer;
+ }
+ #publicaciones a .titulo-post {
+    color: var(--seagreen);
+    font-size: 21px;
+    font-weight: 300;
+ }
+ #publicaciones a .titulo-post:hover {
+    text-decoration: underline;
+ }
+ #publicaciones .img-post {
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin: 7px 7px 7px 7px;
+    padding: 5px;
+ } 
+ #publicaciones .parrafo-post{
+    font-size: 16px;
+    padding: 5px;
+ }
+ #publicaciones .datos-publicaciones{
+color: var(--very-light-pink);
+ }
+ .datos {
+    color: var(--very-light-pink);
+ }
+ #publicaciones .leer-mas {
+    text-decoration: none;
+    background: var(--hospital-green);
+    color: black;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 15%;
+ }
+ #publicaciones .leer-mas:hover{
+    background: var(--title);
+    color: var(--hospital-green);
+ }
+ #publicaciones .num-comentarios {
+    color: #5f5555;
+    background-color: var(--very-light-pink);
+    border-radius: 5px;
+    border: 0;
+    text-decoration: none;
+    padding: 8px;
+ }
+ #publicaciones .enlace-paginacion {
+    text-decoration: none;
+    color: var(--title);
+ }
+
+ #publicaciones .enlace-paginacion:hover {
+    text-decoration: none;
+    color: var(--title);
+ }
+
+ /*-----parte derecha-----*/
+
+ #sidebar{
+    float: right;
+    width: 28%;
+    border: 1px solid var(--hospital-green);
+    height: auto; overflow: hidden;
+ }
+ #buscar, #categorias, #ultimos-post {
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid var(--hospital-green);
+    height: auto; overflow: hidden;
+    margin-bottom: 20px;
+ }
+
+ #buscar input {
+    border: 1px solid var(--very-light-pink);
+    padding: 10px 4px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 4px;
+    margin-bottom: 4px;
+ }
+ #buscar .button {
+    border: 0;
+    color: black;
+    background: var(--hospital-green);
+    padding: 10px;
+    border-radius: 10px;
+ }
+ .encabezado-sidebar {
+    width: 100%;
+    height: 35px;
+    background: var(--hospital-green);
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+ }
+.enlace-sidebar {
+    text-decoration: none;
+    color: rgb(153, 152, 152);
+}
+
+.title {
+    color: var(--seagreen);
+    padding: 4px;
+}
+.description {
+    padding: 4px;
+}
+ 
+
+
+ 
+
+
