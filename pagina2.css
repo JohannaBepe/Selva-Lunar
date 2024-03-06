@@ -75,6 +75,15 @@ body {
        justify-content: center;
        align-items: center;
     }
+/***---new---*/
+    nav.navar {
+        display: ruby-text;
+    }
+
+    a.navar\.menu {
+        text-decoration: none;
+    }
+
     @media (max-width:640px) {
         .menu {
             display: block;
@@ -86,6 +95,7 @@ body {
             display: none;
         }
      }
+     
 .cards-container {
 display: grid;
 grid-template-columns: repeat(auto-fill, 240px);
